@@ -7,7 +7,7 @@ def add (a, b):
     return a + b
 def subtract (a, b):
     """두 수의 차를 반환합니다.
-    Args: a, b (float): 첫 번째 수에서 두 번째 수를 뺩니다
+    Args: a, b (float): 첫 번째 수에서 두 번째 수를 뺍니다
     Returns: float: a - b"""
     return a - b
 def multiply (a, b):
@@ -21,7 +21,6 @@ def divide (a, b):
     Returns: float: a / b
     Raises: ValueError: b가 0일 때"""
     if b ==0:
-        raise ValueError(
-"Cannot divide by zero / 0으로 나눌 수 없습니다."
-)
+       raise ValueError(f"Cannot divide by zero: divisor was {b}")
+
     return a / b
